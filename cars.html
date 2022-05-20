@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NTI Mobile</title>
+    <link rel="stylesheet" href="app/css/normalize.css">
+    <link rel="stylesheet" href="app/css/swiper.css">
+    <link rel="stylesheet" href="app/css/magnific-popup.css">
+    <link rel="stylesheet" href="app/css/main.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="menu-desktop">
+            <div class="logo-container">
+            </div>
+            <div class="header-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="cars.html">Автомобили</a></li>
+                        <li><a href="drivers.html">Водители</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-social">
+                <div class="header-phone">
+                    <img src="./app/img/phone.png" alt="">
+                    <a href="tel:+7 (495) 005 98 45">+7 771 317 8126</a>
+                </div>
+                <div class="header-fainst">
+                    <noindex><a href="#" rel="nofollow"><img src="./app/img/header-social1.png" alt=""></a></noindex>
+                    <noindex><a href="#" rel="nofollow"><img src="./app/img/header-social2.png" alt=""></a></noindex>
+                </div>
+            </div>
+        </div>
+        <div class="menu-mobile">
+            <a href="javascript:void(0);" class="burger">
+                <div class="burger-box">
+                    <span class="burger-line burger-line-1"></span>
+                    <span class="burger-line burger-line-2"></span>
+                </div>
+            </a>
+            <div class="menu-mobile__img">
+            </div>
+            <div class="menu-mobile__phone">
+                <a href="#smob" class="open-link-popup"><img src="./app/img/phone-mob.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="dd-menu">
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="cars.html">Автомобили</a></li>
+        <li><a href="drivers.html">Водители</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+</div>
+    <section class="cars">
+        <div class="container">
+            <div class="cars-settings">
+                <form>
+                    <div class="cars-selection">
+                        <span>Подбор</span>
+                        <img src="./app/img/cars-arrow.png" alt="">
+                    </div>
+                    <div class="cars-settings-values">
+                        <input type="text"  maxlength="30" placeholder="Поиск" class="inp-text">
+                        <span class="cars-settings-title cars-settings-title_ots">Цена p/ч</span>
+                        <input type="text" maxlength="30" placeholder="не важно" class="inp-text">
+                        <span class="cars-settings-title cars-settings-title_ots">Мест</span>
+                        <input type="text" maxlength="30" placeholder="не важно" class="inp-text">
+                        <span class="cars-settings-title cars-settings-title-check">Тип авто</span>
+                        <div class="cars-settings-type">
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="type" id="type1"
+                                       name="contact" value="email">
+                                <label for="type1">Бизнес класс</label>
+                            </div>
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="type" id="type2"
+                                       name="contact" value="phone">
+                                <label for="type2">Vip класс</label>
+                            </div>
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="type" id="type3"
+                                       name="contact" value="mail">
+                                <label for="type3">Люкс класс</label>
+                            </div>
+                        </div>
+                        <span class="cars-settings-title cars-settings-title-check cars-ots">Событие</span>
+                        <div class="cars-settings-event">
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="event" id="event1"
+                                       name="contact" value="email">
+                                <label for="event1">Свадьба</label>
+                            </div>
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="event" id="event2"
+                                       name="contact" value="phone">
+                                <label for="event2">Трансфер</label>
+                            </div>
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="event" id="event3"
+                                       name="contact" value="mail">
+                                <label for="event3">Выписка</label>
+                            </div>
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="event" id="event4"
+                                       name="contact" value="mail">
+                                <label for="event4">Поездка по городу</label>
+                            </div>
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="event" id="event5"
+                                       name="contact" value="mail">
+                                <label for="event5">Междугородняя поездка</label>
+                            </div>
+                        </div>
+                        <span class="cars-settings-title cars-settings-title-check cars-ots">Марка</span>
+                        <div class="cars-settings-ma">
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="ma" id="ma1"
+                                       name="contact" value="email">
+                                <label for="ma1">Mercedes</label>
+                            </div>
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="ma" id="ma2"
+                                       name="contact" value="phone">
+                                <label for="ma2">BMW</label>
+                            </div>
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="ma" id="ma3"
+                                       name="contact" value="mail">
+                                <label for="ma3">Maybach</label>
+                            </div>
+                            <div class="cars-settings-radio">
+                                <input type="radio" name="ma" id="ma4"
+                                       name="contact" value="mail">
+                                <label for="ma4">Audi</label>
+                            </div>
+                        </div>
+                        <div class="cars-btns">
+                            <button class="btn">Показать</button>
+                            <button class="btn">Сбросить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="cars-catalog">
+                <a href="card.html">
+                <div class="cars-catalog-item">
+                    <div class="cars-catalog-item__img">
+                        <img src="./app/img/carimg1.png" alt="">
+                    </div>
+                    <div class="cars-catalog-item__description">
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name item-names">Mercedes-Maybach S600</span>
+                            <span class="cars-catalog-item-value item-red">5000 тг/ч</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча/проводы</span>
+                            <span class="cars-catalog-item-value">20000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча + проводы</span>
+                            <span class="cars-catalog-item-value">500000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Пассажирских мест</span>
+                            <span class="cars-catalog-item-value">4</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Цвет</span>
+                            <span class="cars-catalog-item-value">Серебро</span>
+                        </div>
+                    </div>
+                </div></a>
+                <a href="card.html">
+                <div class="cars-catalog-item">
+                    <div class="cars-catalog-item__img">
+                        <img src="./app/img/carimg2.png" alt="">
+                    </div>
+                    <div class="cars-catalog-item__description">
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name item-names">Mercedes-Benz GLC</span>
+                            <span class="cars-catalog-item-value item-red">6000 тг/ч</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча/проводы</span>
+                            <span class="cars-catalog-item-value">45000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча + проводы</span>
+                            <span class="cars-catalog-item-value">66000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Пассажирских мест</span>
+                            <span class="cars-catalog-item-value">4</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Цвет</span>
+                            <span class="cars-catalog-item-value">Красный</span>
+                        </div>
+                    </div>
+                </div></a>
+                <a href="card.html">
+                <div class="cars-catalog-item">
+                    <div class="cars-catalog-item__img">
+                        <img src="./app/img/carimg3.png" alt="">
+                    </div>
+                    <div class="cars-catalog-item__description">
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name item-names">Mercedes Benz Clase C</span>
+                            <span class="cars-catalog-item-value item-red">6000 тг/ч</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча/проводы</span>
+                            <span class="cars-catalog-item-value">7 500</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча + проводы</span>
+                            <span class="cars-catalog-item-value">14 000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Пассажирских мест</span>
+                            <span class="cars-catalog-item-value">4</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Цвет</span>
+                            <span class="cars-catalog-item-value">Синий</span>
+                        </div>
+                    </div>
+                </div></a>
+                <a href="card.html">
+                <div class="cars-catalog-item">
+                    <div class="cars-catalog-item__img">
+                        <img src="./app/img/carimg4.png" alt="">
+                    </div>
+                    <div class="cars-catalog-item__description">
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name item-names">BMW M5</span>
+                            <span class="cars-catalog-item-value item-red">6000 тг/ч</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча/проводы</span>
+                            <span class="cars-catalog-item-value">4 000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча + проводы</span>
+                            <span class="cars-catalog-item-value">7 000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Пассажирских мест</span>
+                            <span class="cars-catalog-item-value">4</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Цвет</span>
+                            <span class="cars-catalog-item-value">Синий</span>
+                        </div>
+                    </div>
+                </div></a>
+                <a href="card.html">
+                <div class="cars-catalog-item">
+                    <div class="cars-catalog-item__img">
+                        <img src="./app/img/carimg5.png" alt="">
+                    </div>
+                    <div class="cars-catalog-item__description">
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name item-names">BMW X6</span>
+                            <span class="cars-catalog-item-value item-red">6000 тг/ч</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча/проводы</span>
+                            <span class="cars-catalog-item-value">4 000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча + проводы</span>
+                            <span class="cars-catalog-item-value">7 000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Пассажирских мест</span>
+                            <span class="cars-catalog-item-value">4</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Цвет</span>
+                            <span class="cars-catalog-item-value">Красный</span>
+                        </div>
+                    </div>
+                </div></a>
+                <a href="card.html">
+                <div class="cars-catalog-item">
+                    <div class="cars-catalog-item__img">
+                        <img src="./app/img/carimg6.png" alt="">
+                    </div>
+                    <div class="cars-catalog-item__description">
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name item-names">BMW X5</span>
+                            <span class="cars-catalog-item-value item-red">6000 тг/ч</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча/проводы</span>
+                            <span class="cars-catalog-item-value">4 000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча + проводы</span>
+                            <span class="cars-catalog-item-value">7 000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Пассажирских мест</span>
+                            <span class="cars-catalog-item-value">4</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Цвет</span>
+                            <span class="cars-catalog-item-value">Красный</span>
+                        </div>
+                    </div>
+                </div></a>
+                <a href="card.html">
+                <div class="cars-catalog-item">
+                    <div class="cars-catalog-item__img">
+                        <img src="./app/img/carimg7.png" alt="">
+                    </div>
+                    <div class="cars-catalog-item__description">
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name item-names">BMW X7</span>
+                            <span class="cars-catalog-item-value item-red">6000 тг/ч</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча/проводы</span>
+                            <span class="cars-catalog-item-value">4 000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Встреча + проводы</span>
+                            <span class="cars-catalog-item-value">7 000</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Пассажирских мест</span>
+                            <span class="cars-catalog-item-value">4</span>
+                        </div>
+                        <div class="cars-catalog-item__description-container">
+                            <span class="cars-catalog-item-name">Цвет</span>
+                            <span class="cars-catalog-item-value">Красный</span>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </section>
+    <div id="toTop" class="top-arrow"><img src="./app/img/top.png" alt=""></div>
+    <section class="clients">
+        <div class="container">
+            <div class="clients-title">
+                <span>Наши клиенты</span>
+            </div>
+            <div class="clients-block">
+                <div class="clients-block-img">
+                    <img src="./app/img/clients1.png" alt="">
+                </div>
+                <div class="clients-block-img">
+                    <img src="./app/img/clients2.png" alt="">
+                </div>
+                <div class="clients-block-img">
+                    <img src="./app/img/clients3.png" alt="">
+                </div>
+                <div class="clients-block-img">
+                    <img src="./app/img/clients4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts-logo">
+            </div>
+            <div class="contacts-block">
+                <div class="contacts-menu">
+                    <div class="contacts-title">
+                        <span>Меню</span>
+                    </div>
+                    <ul>
+                        <li><img src="./app/img/trin.png" alt=""><a href="index.html">Главная</a></li>
+                        <li><img src="./app/img/trin.png" alt=""><a href="cars.html">Автомобили</a></li>
+                        <li><img src="./app/img/trin.png" alt=""><a href="drivers.html">Водители</a></li>
+                        <li><img src="./app/img/trin.png" alt=""><a href="services.html">Услуги</a></li>
+                        <li><img src="./app/img/trin.png" alt=""><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="contacts-messagers">
+                    <div class="contacts-title">
+                        <span>Мессенджеры</span>
+                    </div>
+                    <div class="contacts-messagers-icon">
+                        <noindex><a href="#" rel="nofollow"><img src="./app/img/telegram.png" alt=""></a></noindex>
+                        <noindex><a href="#" rel="nofollow"><img src="./app/img/viber.png" alt=""></a></noindex>
+                        <noindex><a href="#" rel="nofollow"><img src="./app/img/whats.png" alt=""></a></noindex>
+                    </div>
+                    <div class="contacts-messagers-phone">
+                        <span>Наш телефон</span>
+                        <a href="tel:7 (495) 005 98 45">+7 (702) 005 98 45</a>
+                    </div>
+                    <div class="contacts-messagers-mail">
+                        <span>Наша почта</span>
+                        <a href="mailto:info@blackcar.ru">info@blackcar.ru</a>
+                    </div>
+                </div>
+                <div class="contacts-subscribe">
+                    <div class="contacts-title">
+                        <span>Подписаться на рассылку</span>
+                    </div>
+                    <form action="mailto:">
+                    <input type="text" maxlength="35" placeholder="Email">
+                    <a href="#" class="btn contacts-btn">Отправить</a></form>
+                    <div class="contacts-social">
+                        <a href="javascript:void(0);"><img src="./app/img/contacts-facebook.png" alt=""></a>
+                        <a href="javascript:void(0);"><img src="./app/img/contacts-instagram.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>© 2021 Car.ru</span>
+        <span>Все права защищены</span>
+    </footer>
+    <!--Окна-->
+    <div id="smob" class="smob mfp-hide">
+        <div class="s-container">
+            <a href="tel:+7 (495) 005 98 45">+7 771 317 8126</a>
+            <a href="mailto:info@blackcar.ru">Ashabaev1409@gmail.com</a>
+            <a href="javascript:void(0);">
+                <img src="./app/img/s-mob1.png" alt="">
+                <span>Facebook</span>
+            </a>
+            <a href="javascript:void(0);">
+                <img src="./app/img/s-mob2.png" alt="">
+                <span>Viber</span>
+            </a>
+            <a href="javascript:void(0);">
+                <img src="./app/img/s-mob3.png" alt="">
+                <span>WhatsApp</span>
+            </a>
+            <a href="javascript:void(0);">
+                <img src="./app/img/s-mob4.png" alt="">
+                <span>Telegram</span>
+            </a>
+            <a href="javascript:void(0);">
+                <img src="./app/img/s-mob5.png" alt="">
+                <span>Instagram</span>
+            </a>
+        </div>
+    </div>
+    <script src="app/js/lightbox-plus-jquery.min.js"></script>
+    <script src="app/js/swiper.min.js"></script>
+    <script src="app/js/jquery.magnific-popup.js"></script>
+    <script src="app/js/app.js"></script>
+</body>
+</html>

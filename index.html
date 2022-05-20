@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NTI Mobile</title>
+    <link rel="stylesheet" href="app/css/normalize.css">
+    <link rel="stylesheet" href="app/css/swiper.css">
+    <link rel="stylesheet" href="app/css/magnific-popup.css">
+    <link rel="stylesheet" href="app/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="app/css/main.css">
+    <link rel="stylesheet" href="chatbot/chatbot.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-desktop">
+                <div class="logo-container">
+                   
+                </div>
+                <div class="header-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="cars.html">Автомобили</a></li>
+                            <li><a href="drivers.html">Водители</a></li>
+                            <li><a href="services.html">Услуги</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-social">
+                    <div class="header-phone">
+                        <img src="./app/img/phone.png" alt="">
+                        <a href="tel:+7 (702) 005 98 45">+7 771 317 8126</a>
+                    </div>
+                    <div class="header-fainst">
+                        <noindex><a href="https://www.facebook.com/" rel="nofollow"><img src="./app/img/header-social1.png" alt=""></a></noindex>
+                        <noindex><a href="https://www.instagram.com/" rel="nofollow"><img src="./app/img/header-social2.png" alt=""></a></noindex>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-mobile">
+                <a href="javascript:void(0);" class="burger">
+                    <div class="burger-box">
+                        <span class="burger-line burger-line-1"></span>
+                        <span class="burger-line burger-line-2"></span>
+                    </div>
+                </a>
+                <div class="menu-mobile__img">
+                 
+                </div>
+                <div class="menu-mobile__phone">
+                    <a href="#smob" class="open-link-popup"><img src="./app/img/phone-mob.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="dd-menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="cars.html">Автомобили</a></li>
+            <li><a href="drivers.html">Водители</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+    <section class="choise">
+        <div class="swiper-container choise-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="choise-img">
+                        <img src="./app/img/choise1.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choise-img">
+                        <img src="./app/img/choise2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choise-img">
+                        <img src="./app/img/choise1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="choise-tabs">
+            <ul>
+                <li data-mark="bmw" class="tab-active">BMW</li>
+                <li data-mark="mercedes">Mercedes</li>
+                <li data-mark="maybach">Maybach</li>
+            </ul>
+            <div class="choise-options" id="bmw">
+                <div class="choise-tr">
+                    <select name="car" class="select-ots select-style car">
+                        <option>BMW</option>
+                        <option>BMW M3</option>
+                        <option>BMW M5</option>
+                        <option>BMW X5</option>
+                    </select>
+                    <select name="type"  class="select-ots select-style travel">
+                        <option>Поездки по городу</option>
+                        <option>Поездки в другой город</option>
+                    </select>
+                    <span class="choise-price">9000 тг./мин</span>
+                </div>
+                <div class="choise-tr">
+                    <input type="text" placeholder="Адрес" maxlength="30" class="address select-style">
+                    <input type="text" placeholder="Время" maxlength="5" class="time select-ots select-style">
+                    <div class="choise-data">
+                        <input type='text' class="datepicker date select-style">
+                        <div class="date-img">
+                            <img src="./app/img/date.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="choise-tr">
+                    <a href="javascript:void(0);" class="btn choise-btn">Заказать авто</a>
+                </div>
+            </div>
+            <div class="choise-options hide" id="mercedes">
+                <div class="choise-tr">
+                    <select name="car" class="select-ots select-style car">
+                        <option>Mersedes</option>
+                        <option>BMW M3</option>
+                        <option>BMW M5</option>
+                        <option>BMW X5</option>
+                    </select>
+                    <select name="type"  class="select-ots select-style travel">
+                        <option>Поездки по городу</option>
+                        <option>Поездки в другой город</option>
+                    </select>
+                    <span class="choise-price">20000 тг./мин</span>
+                </div>
+                <div class="choise-tr">
+                    <input type="text" placeholder="Адрес" maxlength="30" class="address select-style">
+                    <input type="text" placeholder="Время" maxlength="5" class="time select-ots select-style">
+                    <div class="choise-data">
+                        <input type='text' class="datepicker date select-style">
+                        <div class="date-img">
+                            <img src="./app/img/date.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="choise-tr">
+                    <a href="javascript:void(0);" class="btn choise-btn">Заказать авто</a>
+                </div>
+            </div>
+            <div class="choise-options hide" id="maybach">
+                <div class="choise-tr">
+                    <select name="car" class="select-ots select-style car">
+                        <option>Maybach</option>
+                        <option>BMW M3</option>
+                        <option>BMW M5</option>
+                        <option>BMW X5</option>
+                    </select>
+                    <select name="type"  class="select-ots select-style travel">
+                        <option>Поездки по городу</option>
+                        <option>Поездки в другой город</option>
+                    </select>
+                    <span class="choise-price">25000 тг./мин</span>
+                </div>
+                <div class="choise-tr">
+                    <input type="text" placeholder="Адрес" maxlength="30" class="address select-style">
+                    <input type="text" placeholder="Время" maxlength="5" class="time select-ots select-style">
+                    <div class="choise-data">
+                        <input type='text' class="datepicker date select-style">
+                        <div class="date-img">
+                            <img src="./app/img/date.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="choise-tr">
+                    <a href="javascript:void(0);" class="btn choise-btn">Заказать авто</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="choise-mob">
+            <div class="swiper-container choise-mob-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="choise-img">
+                            <img src="./app/img/choise1-mob.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="choise-img">
+                            <img src="./app/img/choise1-mob.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="choise-img">
+                            <img src="./app/img/choise1-mob.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        <div class="choise-mob-menu">
+            <ul>
+                <li><a href="cars.html">Автомобили</a></li>
+                <li><a href="drivers.html">Водители</a></li>
+                <li><a href="services.html">Услуги</a></li>
+            </ul>
+        </div>
+        <div class="choise-mob-tabs">
+            <ul>
+                <li data-mark="bmw-mob" class="tab-active">BMW</li>
+                <li data-mark="mercedes-mob">Mercedes</li>
+                <li data-mark="maybach-mob">Maybach</li>
+            </ul>
+            <div class="choise-options" id="bmw-mob">
+                <div class="choise-tr">
+                    <select name="car" class="select-ots select-style car">
+                        <option>BMW</option>
+                        <option>BMW M3</option>
+                        <option>BMW M5</option>
+                        <option>BMW X5</option>
+                    </select>
+                    <select name="type"  class="select-ots select-style travel">
+                        <option>Поездки по городу</option>
+                        <option>Поездки в другой город</option>
+                    </select>
+                    <span class="choise-price">9000 тг./мин</span>
+                </div>
+                <div class="choise-tr">
+                    <input type="text" placeholder="Адрес" maxlength="30" class="address select-style">
+                    <input type="text" placeholder="Время" maxlength="5" class="time select-ots select-style">
+                    <div class="choise-data">
+                        <input type='text' class="datepicker date select-style">
+                        <div class="date-img">
+                            <img src="./app/img/date.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="choise-tr">
+                    <a href="javascript:void(0);" class="btn choise-btn">Заказать авто</a>
+                </div>
+            </div>
+            <div class="choise-options hide" id="mercedes-mob">
+                <div class="choise-tr">
+                    <select name="car" class="select-ots select-style car">
+                        <option>Mersedes</option>
+                        <option>BMW M3</option>
+                        <option>BMW M5</option>
+                        <option>BMW X5</option>
+                    </select>
+                    <select name="type"  class="select-ots select-style travel">
+                        <option>Поездки по городу</option>
+                        <option>Поездки в другой город</option>
+                    </select>
+                    <span class="choise-price">20000 тг./мин</span>
+                </div>
+                <div class="choise-tr">
+                    <input type="text" placeholder="Адрес" maxlength="30" class="address select-style">
+                    <input type="text" placeholder="Время" maxlength="5" class="time select-ots select-style">
+                    <div class="choise-data">
+                        <input type='text' class="datepicker date select-style">
+                        <div class="date-img">
+                            <img src="./app/img/date.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="choise-tr">
+                    <a href="javascript:void(0);" class="btn choise-btn">Заказать авто</a>
+                </div>
+            </div>
+            <div class="choise-options hide" id="maybach-mob">
+                <div class="choise-tr">
+                    <select name="car" class="select-ots select-style car">
+                        <option>Maybach</option>
+                        <option>BMW M3</option>
+                        <option>BMW M5</option>
+                        <option>BMW X5</option>
+                    </select>
+                    <select name="type"  class="select-ots select-style travel">
+                        <option>Поездки по городу</option>
+                        <option>Поездки в другой город</option>
+                    </select>
+                    <span class="choise-price">25000 руб./мин</span>
+                </div>
+                <div class="choise-tr">
+                    <input type="text" placeholder="Адрес" maxlength="30" class="address select-style">
+                    <input type="text" placeholder="Время" maxlength="5" class="time select-ots select-style">
+                    <div class="choise-data">
+                        <input type='text' class="datepicker date select-style">
+                        <div class="date-img">
+                            <img src="./app/img/date.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="choise-tr">
+                    <a href="javascript:void(0);" class="btn choise-btn">Заказать авто</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="solution">
+        <div class="container">
+            <div class="solution-block">
+                <div class="solution-img">
+                    <img src="./app/img/solution-img.png" alt="">
+                </div>
+                <div class="solution-text">
+                    <span class="solution-title">
+                        Индивидуальное решение для Вас
+                    </span>
+                    <span class="solution-description">
+                        Трансферы и бизнес поездки на VIP автомобилях в Костанае и Костанайской области.
+                        Автомобили бизнес и премиум класса для вас в любое время дня и ночи
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="solution-mob">
+        <div class="container">
+            <div class="solution-block">
+                <div class="solution-img">
+                    <img src="./app/img/solution-mob.png" alt="">
+                </div>
+                <div class="solution-text">
+                    <span class="solution-title">
+                        Индивидуальное решение для Вас
+                    </span>
+                    <span class="solution-description">
+                        Трансферы и бизнес поездки на VIP автомобилях в Костанае и Костанайской рбласти.
+                        Автомобили бизнес и премиум класса для вас в любое время дня и ночи
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="reviews-title">
+            <span>Отзывы наших клиентов</span>
+        </div>
+        <div class="swiper-container reviews-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="reviews-main">
+                        <span>Николай</span>
+                        <span>Аренда mercedes - 221</span>
+                        <div class="reviews-main__img">
+                            <img src="./app/img/stars.png" alt="">
+                        </div>
+                        <span class="reviews-main__desc">Хочу передать спасибо большое, за то что предоставили мне вовремя.
+                            Автомобиль даже выше класс чем я заказывал, как в подарок. Вот. Самое главное все было
+                            вовремя и все было на высшем уровне. Мне очень понравилось, буду рекомендовать друзьям.
+                            Спасибо!
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="reviews-main">
+                        <span>Николай</span>
+                        <span>Аренда mercedes - 221</span>
+                        <div class="reviews-main__img">
+                            <img src="./app/img/stars.png" alt="">
+                        </div>
+                        <span class="reviews-main__desc">Хочу передать спасибо большое arbat-transfer, за то что предоставили мне вовремя.
+                            Автомобиль даже выше класс чем я заказывал, как в подарок. Вот. Самое главное все было
+                            вовремя и все было на высшем уровне. Мне очень понравилось, буду рекомендовать друзьям.
+                            Спасибо!
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="reviews-main">
+                        <span>Николай</span>
+                        <span>Аренда mercedes - 221</span>
+                        <div class="reviews-main__img">
+                            <img src="./app/img/stars.png" alt="">
+                        </div>
+                        <span class="reviews-main__desc">Хочу передать спасибо большое arbat-transfer, за то что предоставили мне вовремя.
+                            Автомобиль даже выше класс чем я заказывал, как в подарок. Вот. Самое главное все было
+                            вовремя и все было на высшем уровне. Мне очень понравилось, буду рекомендовать друзьям.
+                            Спасибо!
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="reviews-mob">
+        <div class="reviews-title">
+            <span>Отзывы наших клиентов</span>
+        </div>
+        <div class="swiper-container reviews-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="reviews-main">
+                        <span>Николай</span>
+                        <span>Аренда mercedes - 221</span>
+                        <div class="reviews-main__img">
+                            <img src="./app/img/stars-mob.png" alt="">
+                        </div>
+                        <span class="reviews-main__desc">Хочу передать спасибо большое, за то что предоставили мне вовремя.
+                            Автомобиль даже выше класс чем я заказывал, как в подарок. Вот. Самое главное все было
+                            вовремя и все было на высшем уровне. Мне очень понравилось, буду рекомендовать друзьям.
+                            Спасибо!
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="reviews-main">
+                        <span>Николай</span>
+                        <span>Аренда mercedes - 221</span>
+                        <div class="reviews-main__img">
+                            <img src="./app/img/stars-mob.png" alt="">
+                        </div>
+                        <span class="reviews-main__desc">Хочу передать спасибо большое, за то что предоставили мне вовремя.
+                            Автомобиль даже выше класс чем я заказывал, как в подарок. Вот. Самое главное все было
+                            вовремя и все было на высшем уровне. Мне очень понравилось, буду рекомендовать друзьям.
+                            Спасибо!
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="reviews-main">
+                        <span>Николай</span>
+                        <span>Аренда mercedes - 221</span>
+                        <div class="reviews-main__img">
+                            <img src="./app/img/stars-mob.png" alt="">
+                        </div>
+                        <span class="reviews-main__desc">Хочу передать спасибо большое, за то что предоставили мне вовремя.
+                            Автомобиль даже выше класс чем я заказывал, как в подарок. Вот. Самое главное все было
+                            вовремя и все было на высшем уровне. Мне очень понравилось, буду рекомендовать друзьям.
+                            Спасибо!
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="reviews-main">
+                        <span>Николай</span>
+                        <span>Аренда mercedes - 221</span>
+                        <div class="reviews-main__img">
+                            <img src="./app/img/stars-mob.png" alt="">
+                        </div>
+                        <span class="reviews-main__desc">Хочу передать спасибо большое, за то что предоставили мне вовремя.
+                            Автомобиль даже выше класс чем я заказывал, как в подарок. Вот. Самое главное все было
+                            вовремя и все было на высшем уровне. Мне очень понравилось, буду рекомендовать друзьям.
+                            Спасибо!
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="services-left">
+                <ul>
+                    <li><a href="javascript:void(0);" data-id="always" class="services-list active">Круглосуточно 24/7</a></li>
+                    <li><a href="javascript:void(0);" data-id="city" class="services-list">Поездки по городу</a></li>
+                    <li><a href="javascript:void(0);" data-id="airport" class="services-list">Поездки в аэропорт</a></li>
+                    <li><a href="javascript:void(0);" data-id="othercity" class="services-list">Поездки в другие города</a></li>
+                </ul>
+            </div>
+            <div id="always" class="services-right">
+                <img src="./app/img/car1.png" alt="">
+                <div class="services-text">
+                    <span>Услуга предоставляется круглосуточно.</span>
+                    <span>Независимое государство входит утконос. </span>
+                    <span>Пейзажный парк превышает расовый состав. </span>
+                    <span>Акцентируется не красота садовой дорожки.</span>
+                </div>
+            </div>
+            <div id="airport" class="services-right hide">
+                <img src="./app/img/car1.png" alt="">
+                <div class="services-text">
+                    <span>Поездки в аэропорт</span>
+                    <span>Независимое государство входит утконос. </span>
+                    <span>Пейзажный парк превышает расовый состав. </span>
+                    <span>Акцентируется не красота садовой дорожки.</span>
+                </div>
+            </div>
+            <div id="city" class="services-right hide">
+                <img src="./app/img/car1.png" alt="">
+                <div class="services-text">
+                    <span>Поездки по городу</span>
+                    <span>Независимое государство входит утконос. </span>
+                    <span>Пейзажный парк превышает расовый состав. </span>
+                    <span>Акцентируется не красота садовой дорожки.</span>
+                </div>
+            </div>
+            <div id="othercity" class="services-right hide">
+                <img src="./app/img/car1.png" alt="">
+                <div class="services-text">
+                    <span>Поездки в другие города</span>
+                    <span>Независимое государство входит утконос. </span>
+                    <span>Пейзажный парк превышает расовый состав. </span>
+                    <span>Акцентируется не красота садовой дорожки.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-mob">
+        <div class="container">
+            <div class="services-left">
+                <ul>
+                    <li><a href="javascript:void(0);" data-id="always-mob" class="services-list active">Круглосуточно 24/7</a></li>
+                    <li><a href="javascript:void(0);" data-id="city-mob" class="services-list">Поездки по городу</a></li>
+                    <li><a href="javascript:void(0);" data-id="airport-mob" class="services-list">Поездки в аэропорт</a></li>
+                    <li><a href="javascript:void(0);" data-id="othercity-mob" class="services-list">Поездки в другие города</a></li>
+                </ul>
+            </div>
+            <div id="always-mob" class="services-right">
+                <img src="./app/img/car1-mob.png" alt="">
+                <div class="services-text">
+                    <span>Услуга предоставляется круглосуточно.</span>
+                    <span>Независимое государство входит утконос. </span>
+                    <span>Пейзажный парк превышает расовый состав. </span>
+                    <span>Акцентируется не красота садовой дорожки.</span>
+                </div>
+            </div>
+            <div id="airport-mob" class="services-right hide">
+                <img src="./app/img/car1-mob.png" alt="">
+                <div class="services-text">
+                    <span>Поездки в аэропорт</span>
+                    <span>Независимое государство входит утконос. </span>
+                    <span>Пейзажный парк превышает расовый состав. </span>
+                    <span>Акцентируется не красота садовой дорожки.</span>
+                </div>
+            </div>
+            <div id="city-mob" class="services-right hide">
+                <img src="./app/img/car1-mob.png" alt="">
+                <div class="services-text">
+                    <span>Поездки по городу</span>
+                    <span>Независимое государство входит утконос. </span>
+                    <span>Пейзажный парк превышает расовый состав. </span>
+                    <span>Акцентируется не красота садовой дорожки.</span>
+                </div>
+            </div>
+            <div id="othercity-mob" class="services-right hide">
+                <img src="./app/img/car1-mob.png" alt="">
+                <div class="services-text">
+                    <span>Поездки в другие города</span>
+                    <span>Независимое государство входит утконос. </span>
+                    <span>Пейзажный парк превышает расовый состав. </span>
+                    <span>Акцентируется не красота садовой дорожки.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="description">
+        <div class="container">
+            <div class="description-left">
+                <span class="desc-left-main">Автомобиль с водителем</span>
+                <span class="desc-left-two">Аренда авто с водителем в Костанае</span>
+                <p>
+                    Такая современная, продвинутая услуга,
+                    как прокат авто с водителем в Костанае,
+                    становится все более востребованной среди бизнесменов,
+                    деловых компаний и обычных граждан. В отличие от заказа
+                    такси для поездки по мегаполису,заказ автомобиля с водителем
+                    предлагает более доступную стоимость, включая больше возможностей
+                    и преимуществ.
+                    <span class="desc-circle">● Компания предлагает гостям и жителям города удобную</span>
+                    <span>услугу – аренда автомобиля с водителем в Костанае,</span>
+                    <span class="desc-circle">которая станет грамотным решением транспортной проблемы
+                    в отдельно</span> взятом случае для крупных фирм, организаций и частных лиц.
+                    Воспользовавшись предложениями компании, можно заказать
+                    машину для таких торжественных событий, как юбилей, свадьба или других
+                    масштабных празднеств и вечеринок. У нас действует услуга –  аренда вип
+                    авто с водителем для романтических прогулок, деловых встреч или трансфера
+                    в аэропорт с большим выбором машин бизнес- и премиум-класса.
+                </p>
+                <span class="desc-left-two">Аренда машины с водителем в Костанае</span>
+                <p>
+                    Выгодная аренда машины с водителем в Костанае у нас – это масса преимуществ, среди которых высокий сервис обслуживания, престижный класс автомобилей, полностью исправное состояние предоставленного транспорта, удобство и комфортность в поездке. Вы можете прибегнуть к услуге в самых разных случаях, где арендованная машина:
+                    <span class="desc-circle">● Удобна для долговременной загородной поездки;</span>
+                    <span class="desc-circle">● Необходима в том случае, если в течение дня запланировано множество встреч в разных частях города;</span>
+                    <span class="desc-circle">● Требуется для организации встречи в аэропорту и сопровождения важной персоны;</span>
+                    <span class="desc-circle">● Для обслуживания торжественных мероприятий;</span>
+                    <span class="desc-circle">● И даже в том случае, когда собственный автомобиль находится в ремонте или у вас нет права управления автотранспортным средством.</span>
+                    Каждому нашему клиенту предоставляется профессиональный опытный водитель на день с машиной, и мы гарантируем доступную, строго
+                </p>
+                <p class="hide-content hide">
+                    фиксированную стоимость аренды, отраженную в договоре. В стоимость аренды входит автомобиль с водителем,
+                    определенный срок аренды (краткосрочная/долгосрочная) и страховка, на случай возникновения нештатных
+                    ситуаций на дороге.
+                    <a href="javascript:void(0);" class="read-next close-content">Свернуть<img src="./app/img/arrow-top.png" alt=""></a>
+                </p>
+                <a href="javascript:void(0);" class="read-next open-content">Читать далее <img src="./app/img/arrow-bottom.png" alt=""></a>
+            </div>
+            <div class="description-right">
+                <div class="desc-car">
+                    <a href="javascript:void(0);"><img src="./app/img/desk1.png" alt="">
+                    <div class="desc-car__text">
+                        <span>Бизнес класс</span>
+                        <span>от 10000 тг/час</span>
+                    </div></a>
+                </div>
+                <div class="desc-car">
+                    <a href="javascript:void(0);"><img src="./app/img/desk2.png" alt="">
+                    <div class="desc-car__text">
+                        <span>VIP класс</span>
+                        <span>от 10000 тг/час</span>
+                    </div></a>
+                </div>
+                <div class="desc-car">
+                    <a href="javascript:void(0);"><img src="./app/img/desk3.png" alt="">
+                    <div class="desc-car__text">
+                        <span>Люкс класс</span>
+                        <span>от 30000 тг/час</span>
+                    </div></a>
+                    <div id="toTop" class="top-arrow">
+                        <img src="./app/img/top.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="description-mob">
+        <div class="container">
+            <div class="description-left">
+                <span class="desc-left-main">Автомобиль с водителем</span>
+                <span class="desc-left-two">Аренда авто с водителем в Костанае</span>
+                <p>
+                    Такая современная, продвинутая услуга,
+                    как прокат авто с водителем в Костанае,
+                    становится все более востребованной среди бизнесменов,
+                    деловых компаний и обычных граждан. В отличие от заказа
+                    такси для поездки по мегаполису, заказ автомобиля с водителем
+                    предлагает более доступную стоимость, включая больше возможностей
+                    и преимуществ.
+                    <span class="desc-circle">● Компания предлагает гостям и жителям города удобную</span>
+                    <span>услугу – аренда автомобиля с водителем в Костанае,</span>
+                    <span class="desc-circle">которая станет грамотным решением транспортной проблемы
+                    в отдельно</span> взятом случае для крупных фирм, организаций и частных лиц.
+                    Воспользовавшись предложениями компании, можно заказать
+                    машину для таких торжественных событий, как юбилей, свадьба или других
+                    масштабных празднеств и вечеринок. У нас действует услуга – аренда вип
+                    авто с водителем для романтических прогулок, деловых встреч или трансфера
+                    в аэропорт с большим выбором машин бизнес- и премиум-класса.
+                </p>
+                <span class="desc-left-two">Аренда машины с водителем в Костанае</span>
+                <p>
+                    Выгодная аренда машины с водителем в Костанае у нас – это масса преимуществ, среди которых высокий сервис обслуживания, престижный класс автомобилей, полностью исправное состояние предоставленного транспорта, удобство и комфортность в поездке. Вы можете прибегнуть к
+                </p>
+                <p class="hide-content hide">
+                    услуге в самых разных случаях, где арендованная машина:
+                    <span class="desc-circle">● Удобна для долговременной загородной поездки;</span>
+                    <span class="desc-circle">● Необходима в том случае, если в течение дня запланировано множество встреч в разных частях города;</span>
+                    <span class="desc-circle">● Требуется для организации встречи в аэропорту и сопровождения важной персоны;</span>
+                    <span class="desc-circle">● Для обслуживания торжественных мероприятий;</span>
+                    <span class="desc-circle">● И даже в том случае, когда собственный автомобиль находится в ремонте или у вас нет права управления автотранспортным средством.</span>
+                    Каждому нашему клиенту предоставляется профессиональный опытный <b>водитель на день с машиной</b>, и мы гарантируем доступную, строго
+                    фиксированную стоимость аренды, отраженную в договоре. В стоимость аренды входит автомобиль с водителем,
+                    определенный срок аренды (краткосрочная/долгосрочная) и страховка, на случай возникновения нештатных
+                    ситуаций на дороге.
+                    <a href="javascript:void(0);" class="read-next close-content">Свернуть<img src="./app/img/arrow-top.png" alt=""></a>
+                </p>
+                <a href="javascript:void(0);" class="read-next open-content">Читать далее <img src="./app/img/arrow-bottom.png" alt=""></a>
+            </div>
+            <div class="description-right">
+                <div class="desc-car">
+                    <a href="javascript:void(0);"><img src="./app/img/desk1-mob.png" alt="">
+                        <div class="desc-car__text">
+                            <span>Бизнес класс</span>
+                            <span>от 10000 тг/час</span>
+                        </div></a>
+                </div>
+                <div class="desc-car">
+                    <a href="javascript:void(0);"><img src="./app/img/desk2-mob.png" alt="">
+                        <div class="desc-car__text">
+                            <span>VIP класс</span>
+                            <span>от 10000 тг/час</span>
+                        </div></a>
+                </div>
+                <div class="desc-car">
+                    <a href="javascript:void(0);"><img src="./app/img/desk3-mob.png" alt="">
+                        <div class="desc-car__text">
+                            <span>Люкс класс</span>
+                            <span>от 30000 тг/час</span>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="container">
+            <div class="clients-title">
+                <span>Наши клиенты</span>
+            </div>
+            <div class="clients-block">
+                <div class="clients-block-img">
+                    <noindex><a href="https://www.sber.kz/" rel="nofollow"><img src="./app/img/clients1.png" alt=""></a></noindex>
+                </div>
+                <div class="clients-block-img">
+                    <img src="./app/img/clients2.png" alt="">
+                </div>
+                <div class="clients-block-img">
+                    <img src="./app/img/clients3.png" alt="">
+                </div>
+                <div class="clients-block-img">
+                    <img src="./app/img/clients4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts-logo">
+               
+            </div>
+            <div class="contacts-block">
+                <div class="contacts-menu">
+                    <div class="contacts-title">
+                        <span>Меню</span>
+                    </div>
+                    <ul>
+                        <li><img src="./app/img/trin.png" alt=""><a href="index.html">Главная</a></li>
+                        <li><img src="./app/img/trin.png" alt=""><a href="cars.html">Автомобили</a></li>
+                        <li><img src="./app/img/trin.png" alt=""><a href="drivers.html">Водители</a></li>
+                        <li><img src="./app/img/trin.png" alt=""><a href="services.html">Услуги</a></li>
+                        <li><img src="./app/img/trin.png" alt=""><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="contacts-messagers">
+                    <div class="contacts-title">
+                        <span>Мессенджеры</span>
+                    </div>
+                    <div class="contacts-messagers-icon">
+                        <noindex><a href="#" rel="nofollow"><img src="./app/img/telegram.png" alt=""></a></noindex>
+                        <noindex><a href="#" rel="nofollow"><img src="./app/img/viber.png" alt=""></a></noindex>
+                        <noindex><a href="#" rel="nofollow"><img src="./app/img/whats.png" alt=""></a></noindex>
+                    </div>
+                    <div class="contacts-messagers-phone">
+                        <span>Наш телефон</span>
+                        <a href="tel:7 (495) 005 98 45">+7 (702) 005 98 45</a>
+                    </div>
+                    <div class="contacts-messagers-mail">
+                        <span>Наша почта</span>
+                        <a href="mailto:info@blackcar.ru">info@blackcar.ru</a>
+                    </div>
+                </div>
+                <div class="contacts-subscribe">
+                    <div class="contacts-title">
+                        <span>Подписаться на рассылку</span>
+                    </div>
+                    <form action="mailto:">
+                    <input type="text" maxlength="35" placeholder="Email">
+                    <a href="#" class="btn contacts-btn">Отправить</a></form>
+                    <div class="contacts-social">
+                        <a href="javascript:void(0);"><img src="./app/img/contacts-facebook.png" alt=""></a>
+                        <a href="javascript:void(0);"><img src="./app/img/contacts-instagram.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <div class="chatbot__btn">
+   <div class="chatbot__tooltip d-none">Есть вопрос?</div>
+   </div>
+    <footer>
+        <span>© 2022 Car.ru</span>
+        <span>Все права защищены</span>
+    </footer>
+    <!--Окна-->
+    <div id="smob" class="smob mfp-hide">
+        <div class="s-container">
+            <a href="tel:+7 (495) 005 98 45">+7 771 317 8126</a>
+            <a href="mailto:info@blackcar.ru">Ashabaev1409@gmail.com</a>
+            <a href="javascript:void(0);">
+                <img src="./app/img/s-mob1.png" alt="">
+                <span>Facebook</span>
+            </a>
+            <a href="javascript:void(0);">
+                <img src="./app/img/s-mob2.png" alt="">
+                <span>Viber</span>
+            </a>
+            <a href="javascript:void(0);">
+                <img src="./app/img/s-mob3.png" alt="">
+                <span>WhatsApp</span>
+            </a>
+            <a href="javascript:void(0);">
+                <img src="./app/img/s-mob4.png" alt="">
+                <span>Telegram</span>
+            </a>
+            <a href="javascript:void(0);">
+                <img src="./app/img/s-mob5.png" alt="">
+                <span>Instagram</span>
+            </a>
+        </div>
+    </div>
+    <script src="app/js/lightbox-plus-jquery.min.js"></script>
+    <script src="app/js/swiper.min.js"></script>
+    <script src="app/js/jquery.magnific-popup.js"></script>
+    <script src="app/js/jquery-ui.min.js"></script>
+    <script src="app/js/app.js"></script>
+    <!-- FingerPrint JS -->
+    <script src="chatbot/fp2.js"></script>
+    <!-- ChatBot JS -->
+    <script src="chatbot/chatbot.js"></script>
+    <script src="data/data-1.json"></script>
+    <script>
+    // конфигурация чат-бота
+const configChatbot = {};
+// CSS-селектор кнопки, посредством которой будем вызывать окно диалога с чат-ботом
+configChatbot.btn = '.chatbot__btn';
+// ключ для хранения отпечатка браузера
+configChatbot.key = 'fingerprint';
+// реплики чат-бота
+configChatbot.replicas = 'data/data-1.json';
+// корневой элемент
+configChatbot.root = SimpleChatbot.createTemplate();
+// URL chatbot.php
+configChatbot.url = 'chatbot/chatbot.php';
+// переменная для хранения экземпляра
+let chatbot = null;
+// добавление ключа для хранения отпечатка браузера в LocalStorage
+let fingerprint = localStorage.getItem(configChatbot.key);
+if (!fingerprint) {
+  Fingerprint2.get(function (components) {
+    fingerprint = Fingerprint2.x64hash128(components.map(function (pair) {
+      return pair.value
+    }).join(), 31)
+    localStorage.setItem(configChatbot.key, fingerprint)
+  });
+}
+// при клике по кнопке configChatbot.btn
+document.querySelector(configChatbot.btn).onclick = function (e) {
+  this.classList.add('d-none');
+  const $tooltip = this.querySelector('.chatbot__tooltip');
+  if ($tooltip) {
+    $tooltip.classList.add('d-none');
+  }
+  configChatbot.root.classList.toggle('chatbot_hidden');
+  if (chatbot) {
+    return;
+  }
+  // получение json-файла, содержащего сценарий диалога для чат-бота через AJAX
+  const request = new XMLHttpRequest();
+  request.open('GET', configChatbot.replicas, true);
+  request.responseType = 'json';
+  request.onload = function () {
+    const status = request.status;
+    if (status === 200) {
+      const data = request.response;
+      // для поддержки IE11
+      if (typeof data === 'string') {
+        configChatbot.replicas = JSON.parse(data);
+      } else {
+        configChatbot.replicas = data;
+      }
+      // инициализация SimpleChatbot
+      chatbot = new SimpleChatbot(configChatbot);
+      chatbot.init();
+    } else {
+      console.log(status, request.response);
+    }
+  };
+  request.send();
+};
+    </script>
+</body>
+</html>
