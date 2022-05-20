@@ -1,0 +1,2622 @@
+/*General settings*/
+body{
+    font-family: "Century Gothic", sans-serif;
+}
+.container{
+    max-width: 1141px;
+    margin: 0 auto;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    padding: 10px 78px;
+    border: 2px solid #e8e8e8;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.btn:hover{
+    color: #000;
+    background: #fff;
+}
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fff;}
+
+input{
+    outline: none;
+    font-family: "Century Gothic", sans-serif;
+}
+textarea{
+    outline: none;
+    font-family: "Century Gothic", sans-serif;
+}
+select{
+    outline: none;
+    font-family: "Century Gothic", sans-serif;
+}
+.swiper-pagination-bullet{
+    opacity: 1;
+}
+/*Header*/
+header{
+    height: 40px;
+    background: #000;
+}
+header .container{
+    height: 100%;
+}
+header .menu-desktop{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.header-menu li{
+    margin-left: 60px;
+}
+header a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+.header-menu li:first-child{
+    margin-left: 0;
+}
+.header-social{
+    display: flex;
+}
+.header-phone{
+    margin-right: 45px;
+}
+.header-fainst{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Header mobile*/
+.menu-mobile{
+    display: none;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-mobile__img img{
+    width: 100%;
+}
+.burger{
+    width: 45px;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+.burger-line{
+    display: inline-block;
+    height: 2px;
+    background: #fff;
+    width: 45px;
+    position: absolute;
+    line-height: 1;
+    transition: .2s;
+}
+.burger-box{
+    position: absolute;
+    top: 42%;
+}
+.burger-line-2{
+    top: 18px;
+}
+.burger.burger-active .burger-line-1{
+    transform: rotate(45deg);
+    transition: .2s;
+}
+.burger.burger-active .burger-line-2{
+    transform: rotate(-45deg);
+    transition: .2s;
+    top: 0;
+}
+.dd-menu{
+    display: none;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.hide-scroll-body{
+    overflow: hidden;
+}
+.dd-menu li{
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+.dd-menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+.menu-mobile__phone img{
+    width: 100%;
+}
+.smob{
+    margin: 0 auto;
+    width: 80%;
+    background: #000;
+    color: #fff;
+    padding: 45px 0 10px 0;
+}
+.mfp-container{
+    height: 70%;
+}
+.smob a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 35px;
+    text-align: left;
+}
+.smob img{
+    margin-right: 20px;
+}
+.s-container{
+    width: 32%;
+    margin: 0 auto;
+}
+
+/*Choise*/
+.choise{
+    position: relative;
+}
+.choise-img img{
+    width: 100%;
+}
+.choise-tabs{
+    position: absolute;
+    top: 32%;
+    left: 35%;
+    z-index: 3;
+}
+.choise-tabs .tab-active{
+    background: #fff;
+    color: #000;
+}
+.choise-tabs ul{
+    display: flex;
+    list-style: none;
+    border-bottom: 3px solid #fff;
+    text-align: center;
+}
+.choise-tabs li{
+    padding: 18px 0;
+    border-radius: 8px 8px 0 0;
+    font-size: 20px;
+    margin-right: 3px;
+    background: rgba(19,21,22,.4);
+    width: 33%;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.choise-tabs li:last-child{
+    margin-right: 0;
+}
+.choise-options{
+    width: 566px;
+    padding: 25px 35px;
+    background: rgba(19,21,22,.4);
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+.choise-tr{
+    margin-bottom: 30px;
+}
+.select-style{
+    background: rgba(155,155,156,.8);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0 10px 20px;
+    border-radius: 4px;
+}
+.select-ots{
+    margin-right: 3%;
+}
+.choise-price{
+    font-size: 16px;
+    line-height: 26px;
+}
+.address{
+    width: 49%;
+    margin-right: 4%;
+}
+.car{
+    width: 28%;
+}
+.travel{
+    width: 38%;
+    margin-right: 6%;
+}
+.date{
+    padding: 10px 0 10px 37px;
+    width: 17%;
+}
+.time{
+    width: 12%;
+    margin-right: 2%;
+    padding: 10px 0 10px 20px;
+}
+.choise-btn{
+    padding: 10px 201px;
+    margin-top: 10px;
+}
+.choise-options .choise-tr:last-child{
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+.choise-data{
+    display: inline;
+    position: relative;
+}
+.date-img{
+    position: absolute;
+    top: 2px;
+    left: 10px;
+}
+.choise-swiper .swiper-pagination-bullet{
+    border: 2px solid #fff;
+    width: 14px;
+    height: 14px;
+}
+.choise-swiper  .swiper-pagination-bullet-active{
+    background: transparent;
+}
+.choise-swiper .swiper-pagination{
+    bottom: 55px;
+}
+/*Choise mobile*/
+.choise-mob{
+    display: none;
+    position: relative;
+}
+.choise-mob-menu{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    background: rgba(22,29,32,.5);
+}
+.choise-mob-menu ul{
+    list-style: none;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.choise-mob-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+.choise-mob-tabs{
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    z-index: 3;
+    width: 90%;
+}
+.choise-mob-tabs ul {
+    display: flex;
+    list-style: none;
+    border-bottom: 3px solid #fff;
+    text-align: center;
+}
+.choise-mob-tabs li{
+    padding: 18px 0;
+    border-radius: 8px 8px 0 0;
+    font-size: 30px;
+    margin-right: 3px;
+    background: rgba(19,21,22,.4);
+    width: 33%;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.choise-mob-tabs .tab-active{
+    background: #fff;
+    color: #000;
+}
+.choise-mob-tabs .choise-options{
+    width: auto;
+}
+.choise-mob-tabs .time{
+    width: 13%;
+    margin-right: 3%;
+}
+.choise-mob-tabs .address{
+    margin-right: 5%;
+}
+.choise-mob-tabs .choise-btn{
+    padding: 10px 320px;
+}
+.choise-mob-tabs  .date-img{
+    top: 0;
+}
+/*Solution*/
+.solution{
+    background: #ffffff;
+    padding: 100px 0;
+}
+.solution .container{
+    padding-left: 25px;
+}
+.solution-block{
+    display: flex;
+}
+.solution-text{
+    background: #e8e8e8;
+    padding: 55px 0 55px 45px;
+    border-radius: 0 7px 7px 0;
+}
+.solution-img img{
+    height: 100%;
+}
+.solution-text span{
+    display: block;
+}
+.solution-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.solution-description{
+    font-size: 16px;
+}
+/*Solution mobile*/
+.solution-mob{
+    display: none;
+    padding: 70px 0;
+}
+.solution-mob .solution-text{
+    padding: 20px 90px 40px 20px;
+}
+.solution-mob .solution-title{
+    font-size: 30px;
+}
+.solution-mob .solution-description{
+    font-size: 24px;
+}
+/*Reviews*/
+.reviews{
+    background: #131313;
+    padding: 75px 0;
+}
+.reviews span{
+    font-size: 20px;
+    color: #fff;
+}
+.reviews-title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 115px;
+}
+.reviews-main{
+    text-align: center;
+}
+.reviews-main__img{
+    margin: 35px 0;
+}
+.reviews-main span{
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 26px;
+}
+.reviews-main .reviews-main__desc{
+    font-weight: normal;
+    text-transform: none;
+    width: 86%;
+    margin: 0 auto;
+    padding-bottom: 130px;
+}
+.reviews-swiper .swiper-pagination-bullet{
+    border: 2px solid #fff;
+    width: 14px;
+    height: 14px;
+}
+.reviews-swiper  .swiper-pagination-bullet-active{
+    background: transparent;
+}
+.swiper-pagination-bullet-active::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 2px;
+}
+/*Reviews mobile*/
+.reviews-mob{
+    display: none;
+    padding: 60px 0 25px 0;
+    background: #131313;
+    color: #fff;
+}
+.reviews-mob .reviews-main__img{
+    margin: 30px 0 20px 0;
+}
+.reviews-mob .reviews-title{
+    margin-bottom: 65px;
+    font-size: 30px;
+}
+.reviews-mob .reviews-main span{
+    font-size: 30px;
+}
+.reviews-mob .reviews-main .reviews-main__desc{
+    padding-bottom: 105px;
+    font-size: 24px;
+}
+.reviews-mob .reviews-main span:first-child{
+    margin-bottom: 8px;
+}
+/*Services*/
+.services{
+    padding: 100px 0 15px 0;
+}
+.services .container{
+    padding-left: 15px;
+    display: flex;
+}
+.services-left ul{
+    list-style: none;
+}
+.services-left a{
+    margin-left: auto;
+}
+.services-left a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.services-list{
+    width: 350px;
+    padding: 50px 0;
+    background: #131313;
+    border-bottom: 1px solid #b8b8b8;
+    text-align: right;
+}
+.services-right{
+    position: relative;
+}
+.services-right img{
+    height: 100%;
+}
+.active{
+    background: #fff;
+    border-left: 2px solid #000;
+    border-top: 1px solid #b8b8b8;
+    width: 360px;
+}
+.services-left a.active{
+    color: #000;
+    margin: 0;
+}
+.services-text{
+    position: absolute;
+    top:25px;
+    right: -10px;
+}
+.services-text span{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+}
+.services-text span:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+/*Services mobile*/
+.services-mob{
+    display: none;
+    padding: 70px 0;
+}
+.services-mob .container{
+    display: flex;
+}
+.services-mob .services-left a.active{
+    width: 480px;
+}
+.services-mob .services-left  a{
+    width: 470px;
+}
+.services-mob .services-right{
+    width: 100%;
+    overflow: hidden;
+}
+.services-mob .services-right img{
+    width: 100%;
+}
+.services-mob .services-list{
+    padding: 91px 0;
+}
+.services-mob .services-text{
+    top: 35px;
+    left: 25px;
+    width: 83%;
+}
+.services-mob .services-left a{
+    font-size: 24px;
+}
+.services-mob .services-text span:first-child{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.services-mob .services-text span{
+    font-size: 24px;
+}
+/*Description*/
+.description{
+    padding: 100px 0;
+    font-size: 16px;
+    line-height: 29px;
+}
+.description .container{
+    display: flex;
+}
+.desc-car{
+    margin-top: 30px;
+    position: relative;
+    overflow:hidden;
+    border-radius: 5px;
+}
+.desc-car img{
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+}
+.desc-car img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.desc-car__text span{
+    display: block;
+    color: #fff;
+}
+.desc-car__text span:first-child{
+    font-weight: bold;
+    font-size: 20px;
+}
+.desc-car__text span:last-child{
+    font-size: 16px;
+}
+.desc-car__text{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.description-left{
+    margin-right: 30px;
+}
+.description-left span{
+    display: block;
+}
+.desc-left-main{
+    font-size: 20px;
+    font-weight: bold;
+}
+.desc-left-two{
+    margin: 28px 0;
+}
+.desc-circle{
+    padding-left: 20px;
+}
+.read-next{
+    margin: 35px 0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.hide{
+    display: none;
+}
+.top-arrow{
+    position: fixed;
+    bottom: 15px;
+    right: 100px;
+}
+/*Description mobile*/
+.description-mob{
+    display: none;
+}
+.description-mob .container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.description-mob .desc-car{
+    border-radius: 0;
+    margin-top: 10px;
+}
+.description-mob .desc-car:first-child{
+    margin: 0;
+}
+.description-mob .desc-car img{
+    width: 100%;
+}
+.description-mob .desc-car__text span:first-child{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.description-mob .desc-car__text span:last-child{
+    font-size: 24px;
+}
+.description-mob .description-left{
+    margin: 62px 35px 70px 35px;
+}
+.description-mob .desc-left-main{
+    font-size: 30px;
+}
+.description-mob .desc-left-two{
+    font-size: 24px;
+    margin: 40px 0;
+}
+.description-mob p{
+    font-size: 24px;
+}
+/*Clients*/
+.clients{
+    background: #f5f5f5;
+    padding: 55px 0;
+}
+.clients-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.clients-block{
+    display: flex;
+    justify-content: space-between;
+}
+.clients-block-img img{
+    width: 100%;
+}
+/*Contacts*/
+.contacts{
+    background: #131313;
+    padding: 30px 0 50px 0;
+}
+.contacts-block{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-messagers .contacts-title{
+    margin-bottom: 15px;
+}
+.contacts-messagers-icon{
+    margin-bottom: 35px;
+}
+.contacts-messagers-phone{
+    margin-bottom: 35px;
+}
+.contacts-messagers-phone a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.contacts-messagers-phone span{
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    color: #fff;
+}
+.contacts-messagers-mail a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.contacts-messagers-mail span{
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    color: #fff;
+}
+.contacts-menu .contacts-title{
+    margin-bottom: 30px;
+}
+.contacts-subscribe .contacts-title{
+    margin-bottom: 25px;
+}
+.contacts-messagers-icon img{
+    width: 45px;
+}
+.contacts-logo{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contacts-title{
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+.contacts-menu ul{
+    list-style: none;
+}
+.contacts-menu li{
+    width: 256px;
+    padding: 15px 0;
+    border-bottom: 1px solid #2d2d2d;
+    font-size: 16px;
+    color: #fff;
+}
+.contacts-menu li:first-child{
+    border-top: 1px solid #2d2d2d;
+}
+.contacts-menu li img{
+    margin-right: 10px;
+}
+.contacts-menu li a{
+    color: #fff;
+    text-decoration: none;
+}
+.contacts-btn{
+    display: block;
+    margin: 15px 0 25px 0;
+}
+.contacts-social{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.contacts-subscribe input{
+    width: 280px;
+    padding: 10px;
+    background: #939393;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+.contacts-social img{
+    width: 45px;
+}
+/*.contacts-menu li:before{*/
+    /*content: "";*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-top: 50px solid transparent;*/
+    /*border-left: 100px solid red;*/
+    /*border-bottom: 50px solid transparent;*/
+/*}*/
+/*Footer*/
+footer{
+    height: 60px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer span:first-child{
+    margin-right: 20px;
+}
+
+/*!!!OTHER PAGES!!!*/
+/*Services*/
+.service{
+    padding: 100px 0 50px 0;
+}
+.service .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-item{
+    width: 49%;
+    padding-bottom: 50px;
+}
+.service-item a{
+    text-decoration: none;
+    color: inherit;
+}
+.service-item span{
+    display: block;
+}
+.service-img img{
+    width: 100%;
+}
+.service-title{
+    margin: 20px 0 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.service-item p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.service-detailed{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*Drivers*/
+.drivers{
+    padding-top: 100px;
+}
+.drivers .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.driver-person{
+    width: 263px;
+}
+.driver-desc{
+    width: 92%;
+    margin: 0 auto;
+}
+.lit-span{
+    width: 87%;
+    margin: 0 auto;
+}
+.driver-name{
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dfe1e3;
+}
+.driver-car{
+    text-align: center;
+}
+.driver-person{
+    padding-bottom: 100px;
+}
+.driver-car span{
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 20px 0;
+}
+.driver-name span{
+    font-size: 18px;
+    line-height: 23px;
+    display: block;
+}
+.driver-option{
+    display: flex;
+    justify-content: space-between;
+}
+.option-left{
+    font-size: 14px;
+    line-height: 23px;
+}
+.option-right{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 23px;
+}
+/*Connection*/
+.connection{
+    margin: 100px 0 80px 0;
+}
+.connection-message{
+    width: 570px;
+    margin: 0 auto;
+    background: #999999;
+    margin-bottom: 100px;
+}
+.connection-message form{
+    padding: 0 45px;
+}
+.connection-message__title{
+    text-align: center;
+    padding: 55px 0 45px 0;
+}
+.connection-message__title span{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.connection-message-str{
+    display: flex;
+    justify-content: space-between;
+}
+.connection-message-str input{
+    background: #b8b8b8;
+    border: none;
+    padding: 18px 0 18px 18px;
+    width: 205px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.connection-message textarea{
+    background: #b8b8b8;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 18px 0 18px 18px;
+    width: 460px;
+    resize: none;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.connection-btn{
+    text-align: center;
+    padding-bottom: 55px;
+}
+.connection-btn button{
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+}
+.connection-type{
+    display: flex;
+    justify-content: space-between;
+}
+.connection-type-item{
+    max-width: 18%;
+}
+.connection-type-item__title{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.connection-type-item__content{
+    font-size: 14px;
+}
+.connection-type-item__content a{
+    text-decoration: none;
+    color: #000;
+}
+.connection-type-item__content img{
+    margin-right: 13px;
+}
+/*Card*/
+.card{
+    padding: 100px 0;
+}
+.card .container{
+    display: flex;
+    justify-content: space-between;
+}
+.card-swiper{
+    width: 72%;
+}
+.card-text{
+    width: 25%;
+}
+.card-text span{
+    display: block;
+}
+.card-img img{
+    width: 100%;
+}
+.card-title{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.card-option{
+    display: flex;
+    justify-content: space-between;
+}
+.card-price-left{
+    font-size: 14px;
+    line-height: 23px;
+}
+.card-price-right{
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: bold;
+}
+.card-finish-price{
+    margin: 30px 0 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ff1818;
+}
+.card-text p{
+    font-size: 16px;
+}
+.card-btn{
+    text-align: center;
+    margin-bottom: 33px;
+}
+.card-btn a{
+    color: #000;
+    border: 2px solid #000;
+    font-size: 14px;
+}
+.card-btn a:hover{
+    background: #000;
+    color: #fff;
+}
+.card-swiper  .swiper-pagination-bullet-active{
+    background: transparent;
+}
+.card-swiper .swiper-pagination-bullet{
+    border: 2px solid #fff;
+    width: 14px;
+    height: 14px;
+    background: transparent;
+}
+.swiper-pagination-bullet-active::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 2px;
+}
+.card-swiper .swiper-pagination{
+    bottom: 20px;
+}
+.zabr{
+    position: relative;
+    margin: 0 auto;
+    width: 30%;
+    background: #999;
+    color: #fff;
+    padding: 45px 0 45px 0;
+}
+.zabr-container{
+    padding: 0 45px;
+}
+.zabr-title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+}
+.zabr .connection-btn{
+    padding-bottom: 0;
+}
+.zabr .date-img{
+    top: 15px;
+    left: 15px;
+}
+.zabr .datepicker{
+    padding-left: 40px;
+    width: 183px;
+}
+.zabr .mfp-close{
+    color: #fff;
+    top: 10px;
+    right: 10px;
+    font-size: 45px;
+}
+/*Cars*/
+.cars{
+    padding: 100px 0;
+}
+.cars .container{
+    display: flex;
+    justify-content: space-between;
+}
+.cars-settings{
+    background: #f5f5f5;
+    width: 22%;
+    border-radius: 6px;
+}
+.cars-selection{
+    background: #000;
+    color: #fff;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 25px;
+    position: relative;
+}
+.cars-selection img{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+.cars-selection span{
+    display: block;
+    padding: 20px 0 20px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cars-settings input{
+    margin-bottom: 25px;
+    color: #fff;
+}
+.cars-settings-title_ots{
+    margin-bottom: 20px;
+}
+.cars-settings-values{
+    padding: 0 25px;
+}
+.cars-settings-title{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.cars-settings-radio label{
+    font-size: 14px;
+}
+.cars-settings-radio input{
+    margin-bottom: 12px;
+}
+.cars-settings-title-check{
+    margin-bottom: 12px;
+}
+.cars-ots{
+    margin-top: 40px;
+}
+.inp-text{
+    background: #b8b8b8;
+    border: none;
+    padding: 10px 0 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.cars-btns{
+    display: flex;
+    justify-content: space-between;
+
+}
+.cars-btns button{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 5px;
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+}
+.cars-btns button:hover{
+    color: #fff;
+    background: #000;
+}
+.cars-settings-ma{
+    margin-bottom: 30px;
+}
+.cars-catalog-item__description{
+    padding: 25px 40px 0 35px;
+    width: 50%;
+    border-radius: 0 5px 5px 0;
+}
+.cars-catalog{
+    width: 74%;
+}
+.cars-catalog a{
+    text-decoration: none;
+    color: inherit;
+}
+.cars-catalog-item{
+    display: flex;
+}
+.cars-catalog-item__description-container{
+    display: flex;
+    justify-content: space-between;
+}
+.cars-catalog-item-name{
+    font-size: 18px;
+    line-height: 23px;
+}
+.cars-catalog-item-value{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: bold;
+}
+.item-red{
+    font-size: 14px;
+    color: #ff1818;
+    font-weight: normal;
+}
+.cars-catalog-item__description .cars-catalog-item__description-container:first-child{
+    margin-bottom: 40px;
+}
+.cars-catalog-item:hover{
+    box-shadow: 8px -1px 24px 1px rgba(239,239,239,1);
+}
+.cars-catalog-item__img img{
+    width: 100%;
+    height: 100%;
+}
+.cars-catalog-item{
+    margin-bottom: 5px;
+}
+/*Marriage*/
+.marriage{
+    padding: 100px 0 140px 0;
+}
+.marriage-img{
+    float: left;
+    padding-right: 15px;
+}
+.marriage p{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.marriage p:last-child{
+    margin-bottom: 0;
+}
+.marriage-title{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 26px;
+    display: block;
+    margin-bottom: 30px;
+}
+/*Adaptive layout*/
+@media screen and (max-width: 1680px){
+    /*Adaptive index*/
+    .choise-tabs{
+        left: 32%;
+    }
+    /*Adaptive card*/
+    .zabr{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 1440px){
+    /*Adaptive index*/
+    .choise-tabs{
+        left: 29%;
+        top: 28%;
+    }
+    .top-arrow{
+        right: 40px;
+    }
+    /*Adaptive card*/
+    .zabr{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1366px){
+    /*Adaptive index*/
+    .top-arrow{
+        right: 20px;
+    }
+    /*Adaptive cars*/
+    .cars-catalog-item-name{
+        font-size: 16px;
+    }
+    .cars-catalog-item-value{
+        font-size: 16px;
+    }
+    .item-red{
+        font-size: 14px;
+    }
+    /*Adaptive drivers*/
+    .drivers{
+        padding-top: 80px;
+    }
+    .driver-person{
+        padding-bottom: 80px;
+    }
+    /*Adaptive services*/
+    .service{
+        padding: 80px 0 30px 0;
+    }
+    /*Adaptive contacts*/
+    .connection{
+        margin: 80px 0 60px 0;
+    }
+    .connection-message{
+        margin-bottom: 80px;
+    }
+    /*Adaptive card*/
+    .card{
+        padding: 80px 0;
+    }
+    .zabr{
+        width: 43%;
+    }
+}
+@media screen and (max-width: 1280px){
+    /*Adaptive index*/
+    .choise-tabs li{
+        font-size: 18px;
+    }
+    .select-style{
+        font-size: 14px;
+    }
+    .choise-price{
+        font-size: 14px;
+    }
+    .choise-btn{
+        font-size: 16px;
+        padding: 10px 216px;
+    }
+    .choise-tabs{
+        left: 26%;
+        top: 26%;
+    }
+    .reviews span{
+        font-size: 18px;
+    }
+    .services-left a{
+        font-size: 18px;
+    }
+    .services .container{
+        padding-left: 10px;
+    }
+    .top-arrow{
+        right: 5px;
+    }
+    /*Adaptive cars*/
+    .cars{
+        padding: 80px 0;
+    }
+    .item-red{
+        font-size: 14px;
+    }
+    /*Adaptive card*/
+    .zabr{
+        width: 45%;
+    }
+}
+
+/*Mobile layout*/
+@media screen and (max-width: 1024px){
+    /*Mobile General Settings*/
+    .container{
+        max-width: 100%;
+    }
+    /*Mobile Header*/
+    header{
+        height: 100px;
+        position: fixed;
+        z-index: 15;
+        width: 100%;
+        top: 0;
+    }
+    header .container{
+        padding: 0 30px;
+    }
+    header .menu-desktop{
+        display: none;
+    }
+    header .menu-mobile{
+        display: flex;
+    }
+    /*Mobile Choise*/
+    .choise{
+        display: none;
+    }
+    .choise-mob{
+        display: block;
+        margin-top: 100px;
+    }
+    .choise-mob-swiper .swiper-pagination-bullet{
+        border: 2px solid #fff;
+        width: 36px;
+        height: 36px;
+        color: #fff;
+        background: transparent;
+    }
+    .choise-mob-swiper .swiper-pagination{
+        bottom: 30px;
+    }
+    .choise-mob-tabs  select{
+         font-size: 24px;
+     }
+    .choise-mob-tabs  input{
+        font-size: 24px;
+    }
+    .choise-mob-tabs .choise-price{
+        font-size: 24px;
+    }
+    .choise-mob-tabs .choise-btn{
+        font-size: 24px;
+    }
+    /*Mobile Solution*/
+    .solution{
+        display: none;
+    }
+    .solution-mob{
+        display: block;
+    }
+    /*Mobile Reviews*/
+    .reviews{
+        display: none;
+    }
+    .reviews-mob{
+        display: block;
+    }
+    .reviews-swiper .swiper-pagination-bullet{
+        border: 2px solid #fff;
+        width: 36px;
+        height: 36px;
+    }
+    .swiper-pagination-bullet-active::after {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: #fff;
+        border-radius: 50%;
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+        margin: 0 8px;
+    }
+    /*Mobile Services*/
+    .services{
+        display: none;
+    }
+    .services-mob{
+        display: block;
+    }
+    /*Mobile Description*/
+    .description{
+        display: none;
+    }
+    .description-mob{
+        display: block;
+    }
+    /*Mobile Clients*/
+    .clients{
+        padding: 50px 30px;
+    }
+    .clients-title{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    /*Mobile Contacts*/
+    .contacts{
+        background: #2d2d2d;
+    }
+    .contacts .container{
+        padding: 0 30px;
+    }
+    .contacts-menu li{
+        border-bottom: 1px solid #434343;
+    }
+    .contacts-menu li:first-child{
+        border-top: 1px solid #434343;
+    }
+    /*OTHER PAGES*/
+    /*Drivers*/
+    .drivers{
+        padding: 180px 30px 0 30px;
+    }
+    .driver-person:last-child{
+        position: relative;
+        right: 345px;
+    }
+    /*Service*/
+    .service {
+        padding: 180px 30px 30px 30px;
+    }
+    /*Service marriage*/
+    .marriage{
+        padding: 200px 30px 140px 30px;
+    }
+    /*Contacts*/
+    .connection{
+        margin: 180px 0 60px 0;
+    }
+    .connection-type{
+        padding: 0 30px;
+    }
+    /*Cars*/
+    .cars{
+        padding: 180px 30px;
+    }
+    .cars-settings-values{
+        padding: 0 3%;
+    }
+    /*Card*/
+    .card {
+        padding: 180px 0;
+    }
+    .card-swiper .swiper-pagination-bullet-active::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 50%;
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+    .card-swiper{
+        margin: 0;
+    }
+    .card-text{
+        width: 27%;
+    }
+    .zabr{
+        width: 58%;
+    }
+}
+@media screen and (max-width: 768px){
+    /*Mobile Choise*/
+    .choise-mob-tabs  select{
+        font-size: 20px;
+    }
+    .choise-mob-tabs  input{
+        font-size: 20px;
+    }
+    .choise-mob-tabs .choise-price{
+        font-size: 20px;
+    }
+    .choise-mob-tabs .choise-btn{
+        font-size: 20px;
+    }
+    .choise-mob-tabs .choise-btn{
+        padding: 10px 227px;
+    }
+    .choise-mob-tabs .time{
+        margin-right: 2%;
+    }
+    .choise-mob-tabs .address{
+        margin-right: 4%;
+    }
+    .choise-mob-tabs .travel{
+        margin-right: 4%;
+    }
+    .choise-mob-tabs li{
+        font-size: 26px;
+    }
+    /*Services Mobile*/
+    .services-mob .services-left a.active{
+        width: 330px;
+    }
+    .services-mob .services-left  a{
+        width: 320px;
+    }
+    .services-mob .services-left a{
+        font-size: 20px;
+    }
+    .services-mob .services-text span:first-child{
+        font-size: 26px;
+    }
+    .services-mob .services-text span{
+        font-size: 20px;
+    }
+    /*Contacts Mobile*/
+    .contacts-menu li{
+        width: 156px;
+    }
+    /*Windows*/
+    .s-container{
+        width: 46%;
+    }
+    /*OTHER PAGES*/
+    /*Drivers*/
+    .drivers{
+        padding: 180px 50px 0 50px;
+    }
+    .driver-person:last-child{
+        position: inherit;
+    }
+    /*Service marriage*/
+    .marriage{
+        padding: 170px 30px 110px 30px;
+    }
+    /*Contacts*/
+    .connection-type{
+        flex-wrap: wrap;
+    }
+    .connection-type-item__title{
+        font-size: 20px;
+    }
+    .connection-type-item__content img{
+        margin-right: 5px;
+    }
+    .connection-type-item{
+        max-width: 24%;
+        margin-bottom: 30px;
+    }
+    /*Cars*/
+    .cars{
+        padding: 180px 30px;
+    }
+    .cars-catalog-item__description{
+        padding: 25px 0px 0 10px;
+    }
+    .inp-text{
+        width: 80%;
+    }
+    .cars-catalog-item__img{
+        width: 50%;
+    }
+    .cars-btns{
+        flex-wrap: wrap;
+    }
+    .cars-btns button{
+        margin: 0 auto 10% auto;
+    }
+    .cars-selection span{
+        padding: 20px 0 20px 10px;
+    }
+    /*Card*/
+    .card .container{
+        flex-direction: column;
+        padding: 0 30px;
+    }
+    .card-swiper{
+        width: 100%;
+    }
+    .card-text{
+        width: 42%;
+        margin: 30px auto 0 auto;
+    }
+    .zabr{
+        width: 77%;
+    }
+}
+@media screen and (max-width: 480px){
+    /*Header Mobile*/
+    .menu-mobile__img{
+        width: 200px;
+    }
+    .dd-menu a{
+        font-size: 22px;
+    }
+    .choise-mob-menu a{
+        font-size: 20px;
+    }
+    /*Choise Mobile*/
+    .choise-mob-tabs .choise-btn{
+        padding: 10px 100px;
+    }
+    .choise-mob-tabs li{
+        font-size: 16px;
+    }
+    .choise-mob-tabs  select{
+        font-size: 12px;
+    }
+    .choise-mob-tabs .choise-price{
+        font-size: 12px;
+    }
+    .choise-mob-tabs  input{
+        font-size: 12px;
+    }
+    .choise-tr{
+        margin-bottom: 20px;
+    }
+    .choise-options{
+        padding: 25px 20px;
+    }
+    .select-ots{
+        margin-right: 3%;
+    }
+    .select-style{
+        padding: 8px 0 8px 10px;
+    }
+    .choise-mob-tabs .address{
+        margin-right: 3%;
+    }
+    .date{
+        padding: 8px 0 8px 30px;
+    }
+    .choise-mob-tabs .date-img {
+        top: 2px;
+    }
+    .choise-mob-tabs .choise-btn{
+        font-size: 12px;
+    }
+    .choise-options .choise-tr:last-child{
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .choise-mob-tabs .choise-btn {
+        padding: 8px 146px;
+    }
+    .choise-mob-swiper .swiper-pagination-bullet{
+        width: 25px;
+        height: 25px;
+    }
+    .swiper-pagination-bullet-active::after{
+        width: 21px;
+        height: 21px;
+    }
+    .reviews-swiper .swiper-pagination-bullet{
+        width: 25px;
+        height: 25px;
+    }
+    /*Solution Mobile*/
+    .solution-mob{
+        padding: 50px 0;
+    }
+    .solution-mob .solution-title{
+        font-size: 24px;
+    }
+    .solution-mob .solution-description{
+        font-size: 18px;
+    }
+    .solution-mob .solution-text {
+        padding: 20px 0px 40px 15px;
+    }
+    /*Reviews Mobile*/
+    .reviews-mob .reviews-title{
+        font-size: 24px;
+    }
+    .reviews-mob .reviews-main span{
+        font-size: 24px;
+    }
+    .reviews-main .reviews-main__desc{
+        width: 90%;
+    }
+    .reviews-mob .reviews-main .reviews-main__desc{
+        font-size: 20px;
+    }
+    /*Services Mobile*/
+    .services-mob .services-left a.active{
+        width: 210px;
+    }
+    .services-mob .services-left  a{
+        width: 200px;
+    }
+    .services-mob .services-left a{
+        font-size: 14px;
+    }
+    .services-mob .services-text span:first-child{
+        font-size: 20px;
+    }
+    .services-mob .services-text span{
+        font-size: 14px;
+    }
+    .services-mob .services-list {
+        padding: 60px 0;
+    }
+    .services-mob{
+        padding: 50px 0;
+    }
+    /*Description Mobile*/
+    .description-mob .desc-car__text span:first-child{
+        font-size: 20px;
+    }
+    .description-mob .desc-car__text span:last-child{
+        font-size: 14px;
+    }
+    .description-mob .desc-left-main{
+        font-size: 22px;
+    }
+    .description-mob .desc-left-two{
+        font-size: 18px;
+    }
+    .description-mob p{
+        font-size: 18px;
+    }
+    .read-next{
+        font-size: 16px;
+    }
+    .description-mob .description-left{
+        margin: 42px 35px 50px 35px;
+    }
+    /*Clients Mobile*/
+    .clients-title{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .clients-block{
+        flex-direction: column;
+    }
+    .clients-block-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .clients-block-img img{
+        width: auto;
+    }
+    /*Contacts Mobile*/
+    .contacts-block{
+        flex-direction: column;
+    }
+    .contacts-menu{
+        margin: 0 auto 30px auto;
+    }
+    .contacts-messagers{
+        margin: 0 auto 30px auto;
+    }
+    .contacts-subscribe{
+        margin: 0 auto;
+    }
+    /*Windows*/
+    .smob{
+        width: 85%;
+    }
+    .smob a{
+        font-size: 20px;
+    }
+    /*OTHER PAGES*/
+    /*Drivers*/
+    .drivers{
+        padding: 150px 30px 0 30px;
+    }
+    .driver-person{
+        padding-bottom: 50px;
+    }
+    .drivers .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    /*Service*/
+    .service .container{
+     flex-direction: column;
+    }
+    .service-item{
+        width: 100%;
+    }
+    /*Service marriage*/
+    .marriage-img{
+        float: none;
+        margin-right: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .marriage-img img{
+        width: 100%;
+    }
+    /*Contacts*/
+    .connection-type-item{
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .connection-type-item__title{
+        text-align: center;
+    }
+    .connection-type-item__content{
+        text-align: center;
+    }
+    .connection-message{
+        width: 420px;
+    }
+    .connection-message__title{
+        padding: 45px 0 35px 0;
+    }
+    .connection-message-str input{
+        width: 130px;
+    }
+    .connection-message textarea{
+        width: 310px;
+    }
+    .connection-btn{
+        padding-bottom: 45px;
+    }
+    /*Cars*/
+    .cars {
+        padding: 180px 5px;
+    }
+    .cars .container{
+        flex-direction: column;
+    }
+    .cars-settings{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .inp-text{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .cars-settings-title{
+        text-align: center;
+    }
+    .cars-settings-type{
+        margin-left: 25%;
+    }
+    .cars-settings-event{
+        margin-left: 25%;
+    }
+    .cars-settings-ma{
+        margin-left: 25%;
+    }
+    .cars-selection span{
+        padding: 20px 0 20px 30px;
+    }
+    .cars-catalog{
+        width: 100%;
+    }
+    .cars-catalog-item-name{
+        font-size: 14px;
+    }
+    .cars-catalog-item-value{
+        font-size: 14px;
+    }
+    .item-red{
+        font-size: 12px;
+    }
+    .cars-catalog-item__img{
+        width: 50%;
+    }
+    /*Card*/
+    .card{
+        padding: 150px 0;
+    }
+    .card .container{
+        flex-direction: column;
+        padding: 0 30px;
+    }
+    .card-text{
+        width: 65%;
+        margin: 30px auto 0 auto;
+    }
+    .zabr{
+        width: 90%;
+    }
+    .zabr .datepicker{
+        width: 109px;
+    }
+}
+@media screen and (max-width: 414px){
+    /*Header Mobile*/
+    .choise-mob-menu a{
+        font-size: 16px;
+    }
+    .menu-mobile__img{
+        width: 190px;
+    }
+    .menu-mobile__phone img{
+        width: 30px;
+    }
+    .dd-menu a{
+        font-size: 20px;
+    }
+    header{
+        height: 90px;
+    }
+    .choise-mob{
+        margin-top: 90px;
+    }
+    .dd-menu{
+        top: 90px;
+    }
+    /*Choise Mobile*/
+    .choise-options {
+        padding: 25px 10px;
+    }
+    .select-ots{
+        margin-right: 1%;
+    }
+    .choise-mob-tabs .address{
+        margin-right: 1%;
+    }
+    .choise-mob-tabs .travel{
+        margin-right: 1%;
+    }
+    .select-style {
+        padding: 8px 0 8px 5px;
+    }
+    .travel{
+        width: 41%;
+    }
+    .date {
+        padding: 8px 0 8px 30px;
+        width: 20%;
+    }
+    .choise-mob-tabs .choise-btn {
+        padding: 8px 125px;
+    }
+    .choise-mob-swiper .swiper-pagination-bullet{
+        width: 22px;
+        height: 22px;
+    }
+    .swiper-pagination-bullet-active::after{
+        width: 18px;
+        height: 18px;
+    }
+    .reviews-swiper .swiper-pagination-bullet{
+        width: 22px;
+        height: 22px;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+        margin: 0 6px;
+    }
+    /*Solution Mobile*/
+    .solution-mob .solution-title{
+        font-size: 20px;
+    }
+    .solution-mob .solution-description{
+        font-size: 14px;
+    }
+    /*Reviews Mobile*/
+    .reviews-mob .reviews-title{
+        font-size: 18px;
+    }
+    .reviews-mob .reviews-main span{
+        font-size: 18px;
+    }
+    .reviews-mob .reviews-main .reviews-main__desc{
+        font-size: 14px;
+    }
+    /*Services Mobile*/
+    .services-mob .services-left a.active{
+        width: 180px;
+    }
+    .services-mob .services-left  a{
+        width: 170px;
+    }
+    .services-mob .services-left a{
+        font-size: 12px;
+    }
+    .services-mob .services-text span:first-child{
+        font-size: 18px;
+    }
+    .services-mob .services-text span{
+        font-size: 12px;
+    }
+    .services-mob .services-list {
+        padding: 40px 0;
+    }
+    .services-mob{
+        padding: 30px 0;
+    }
+    /*Description Mobile*/
+    .description-mob .desc-car__text span:first-child{
+        font-size: 18px;
+    }
+    .description-mob .desc-car__text span:last-child{
+        font-size: 12px;
+    }
+    .description-mob .description-left{
+        margin: 42px 15px 50px 15px;
+    }
+    .description-mob .desc-left-main{
+        font-size: 20px;
+    }
+    .description-mob .desc-left-two{
+        font-size: 16px;
+    }
+    .description-mob p{
+        font-size: 16px;
+    }
+    .read-next{
+        font-size: 14px;
+    }
+    /*Clients mobile*/
+    .clients-block-img img{
+        max-width: 170px;
+    }
+    /*Contacts mobile*/
+    .contacts-logo img{
+        max-width: 180px;
+    }
+    /*Windows*/
+    .s-container {
+        width: 50%;
+    }
+    .smob{
+        width: 100%;
+    }
+    /*OTHER PAGES*/
+    /*CONTACTS*/
+    .connection-message{
+        width: 354px;
+    }
+    .connection-message__title span{
+        font-size: 22px;
+    }
+    .connection-message-str input{
+        width: 100px;
+    }
+    .connection-message textarea{
+        width: 245px;
+    }
+    /*Cars*/
+    .cars{
+        padding: 150px 5px;
+    }
+    .cars-catalog-item{
+        flex-direction: column;
+    }
+    .cars-catalog-item__img{
+        width: 100%;
+    }
+    .cars-catalog-item__img img{
+        border-radius: 5px;
+    }
+    .cars-catalog-item__description{
+        width: 100%;
+        padding: 0;
+    }
+    .cars-catalog-item-name{
+        font-size: 16px;
+    }
+    .item-red{
+        font-size: 14px;
+    }
+    .cars-catalog-item-value{
+        font-size: 16px;
+    }
+    .cars-catalog-item__description .cars-catalog-item__description-container:first-child{
+        margin-bottom: 20px;
+    }
+    /*Card*/
+    .card .container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .card-text{
+        width: 77%;
+    }
+    .zabr .datepicker{
+        width: 79px;
+    }
+}
+@media screen and (max-width: 375px){
+    /*Header Mobile*/
+    .menu-mobile__img{
+        width: 170px;
+    }
+    .menu-mobile__phone img{
+        width: 27px;
+    }
+    .dd-menu a{
+        font-size: 18px;
+    }
+    .choise-mob-menu a{
+        font-size: 15px;
+    }
+    header .container{
+        padding: 0 10px;
+    }
+    .burger-line{
+        width: 40px;
+    }
+    .burger{
+        width: 40px;
+    }
+    header{
+        height: 80px;
+    }
+    .choise-mob{
+        margin-top: 80px;
+    }
+    .dd-menu{
+        top: 80px;
+    }
+    /*Choise Mobile*/
+    .choise-mob-menu ul{
+        padding: 0 10px;
+    }
+    .choise-mob-tabs{
+        width: 96%;
+        left: 2%;
+    }
+    .choise-options{
+        padding: 25px 5px;
+    }
+    .choise-mob-swiper .swiper-pagination-bullet{
+        width: 20px;
+        height: 20px;
+    }
+    .swiper-pagination-bullet-active::after{
+        width: 16px;
+        height: 16px;
+    }
+    .reviews-swiper .swiper-pagination-bullet{
+        width: 20px;
+        height: 20px;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+        margin: 0 4px;
+    }
+    /*Solution Mobile*/
+    .solution-img img{
+        width: 180px;
+    }
+    .solution-mob .solution-title{
+        font-size: 16px;
+    }
+    .solution-mob .solution-description{
+        font-size: 12px;
+    }
+    .solution-mob .solution-text {
+        padding: 20px 0px 40px 5px;
+    }
+    /*Reviews Mobile*/
+    .reviews-mob .reviews-title{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .reviews-mob .reviews-main span{
+        font-size: 16px;
+    }
+    .reviews-mob .reviews-main .reviews-main__desc{
+        font-size: 12px;
+        padding-bottom: 85px;
+    }
+    /*Services Mobile*/
+    .services-mob .services-left a.active{
+        width: 160px;
+    }
+    .services-mob .services-left  a{
+        width: 150px;
+    }
+    .services-mob .services-left a{
+        font-size: 12px;
+    }
+    .services-mob .services-text span:first-child{
+        font-size: 18px;
+    }
+    .services-mob .services-text span{
+        font-size: 12px;
+    }
+    /*Description Mobile*/
+    .description-mob .desc-car__text span:first-child{
+        font-size: 16px;
+    }
+    .description-mob .desc-car__text span:last-child{
+        font-size: 10px;
+    }
+    .description-mob .desc-left-main{
+        font-size: 18px;
+    }
+    .description-mob .desc-left-two{
+        font-size: 14px;
+    }
+    .description-mob p{
+        font-size: 14px;
+    }
+    .read-next{
+        font-size: 12px;
+    }
+    .description-mob .desc-left-two{
+        margin: 20px 0;
+    }
+    /*Clients*/
+    .clients-block-img img{
+        max-width: 150px;
+    }
+    /*Contacts*/
+    .contacts-logo img{
+        max-width: 160px;
+    }
+    /*Service*/
+    .service{
+        padding: 150px 30px 30px 30px;
+    }
+    /*OTHER PAGES*/
+    /*CONTACTS*/
+    .connection-message form{
+        padding: 0 25px;
+    }
+    .connection-message-str input{
+        width: 120px;
+    }
+    .connection-message textarea{
+        width: 285px;
+    }
+    .connection-message__title{
+        padding: 35px 0 35px 0;
+    }
+    .connection-btn{
+        padding-bottom: 35px;
+    }
+    .zabr{
+        width: 100%;
+    }
+    .connection-message-str input{
+        width: 110px;
+    }
+    .zabr .datepicker{
+        width: 89px;
+    }
+}
+@media screen and (max-width: 360px){
+    /*Choise Mobile*/
+    .choise-mob-tabs .choise-btn{
+        padding: 10px 100px;
+    }
+    .choise-mob-tabs li{
+        font-size: 14px;
+    }
+    .choise-mob-tabs  select{
+        font-size: 10px;
+    }
+    .choise-mob-tabs .choise-price{
+        font-size: 10px;
+    }
+    .choise-mob-tabs  input{
+        font-size: 10px;
+    }
+    .select-ots{
+        margin-right: 1%;
+    }
+    .select-style{
+        padding: 8px 0 8px 5px;
+    }
+    .choise-mob-tabs .address{
+        margin-right: 1%;
+    }
+    .choise-mob-tabs .time{
+        margin-right: 0;
+    }
+    .date{
+        padding: 8px 0 8px 30px;
+    }
+    .choise-mob-tabs .date-img {
+        top: 4px;
+    }
+    .choise-mob-tabs .choise-btn{
+        font-size: 10px;
+    }
+    .choise-mob-tabs .choise-btn {
+        padding: 8px 123px;
+    }
+    .choise-mob-swiper .swiper-pagination-bullet{
+        width: 18px;
+        height: 18px;
+    }
+    .swiper-pagination-bullet-active::after{
+        width: 14px;
+        height: 14px;
+    }
+    .reviews-swiper .swiper-pagination-bullet{
+        width: 18px;
+        height: 18px;
+    }
+    /*Solution Mobile*/
+    .solution-mob .solution-title{
+        font-size: 14px;
+    }
+    .solution-mob .solution-description{
+        font-size: 10px;
+    }
+    .solution-mob .solution-text {
+        padding: 10px 0px 30px 5px;
+        border-radius: inherit;
+    }
+    /*Reviews Mobile*/
+    .reviews-mob .reviews-title{
+        font-size: 16px;
+    }
+    .reviews-mob .reviews-main span{
+        font-size: 16px;
+    }
+    .reviews-mob .reviews-main .reviews-main__desc{
+        font-size: 12px;
+    }
+    .reviews-mob .reviews-title{
+        margin-bottom: 35px;
+    }
+    /*Services Mobile*/
+    .services-mob .services-list {
+        padding: 40px 0;
+    }
+    .services-mob{
+        padding: 30px 0;
+    }
+    .services-mob .services-left a.active{
+        width: 150px;
+    }
+    .services-mob .services-left  a{
+        width: 140px;
+    }
+    .services-mob .services-left a{
+        font-size: 12px;
+    }
+    .services-mob .services-text span:first-child{
+        font-size: 18px;
+    }
+    .services-mob .services-text span{
+        font-size: 12px;
+    }
+    /*Description mobile*/
+    .desc-car__text {
+        top: 15px;
+        left: 15px;
+    }
+    /*Contacts Mobile*/
+    .contacts-title{
+        font-size: 18px;
+        text-align: center;
+    }
+    .contacts-menu li{
+        font-size: 14px;
+    }
+    .contacts-messagers-phone span{
+        font-size: 18px;
+        text-align: center;
+    }
+    .contacts-messagers-phone a{
+        font-size: 18px;
+    }
+    .contacts-messagers-mail span{
+        font-size: 18px;
+        text-align: center;
+    }
+    .contacts-messagers-mail a{
+        font-size: 18px;
+    }
+    .contacts-subscribe input{
+        width: 250px;
+    }
+    /*OTHER PAGES*/
+    /*Service marriage*/
+    .marriage{
+        padding: 150px 30px 90px 30px;
+    }
+    .marriage-title{
+        font-size: 30px;
+    }
+    .marriage p{
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    /*CONTACTS*/
+    .connection-message{
+        width: 340px;
+    }
+    .connection-message textarea{
+        width: 270px;
+    }
+    /*Cars*/
+    .cars-catalog-item{
+        margin-bottom: 20px;
+    }
+    /*Card*/
+    .connection-message-str input{
+        width: 100px;
+    }
+    .zabr .datepicker{
+        width: 79px;
+    }
+}
+@media screen and (max-width: 320px){
+    /*Header Mobile*/
+    .menu-mobile__img{
+        width: 150px;
+    }
+    .menu-mobile__phone{
+        width: 26px;
+    }
+    .menu-mobile__phone img{
+        width: 26px;
+    }
+    .smob a{
+        font-size: 16px;
+    }
+    .dd-menu a{
+        font-size: 16px;
+    }
+    /*Choise Mobile*/
+    .select-ots{
+        margin-right: 0;
+    }
+    .choise-mob-tabs .address{
+        margin-right: 0;
+    }
+    .choise-mob-tabs .choise-btn{
+        padding: 10px 105px;
+    }
+    .choise-mob-menu a{
+        font-size: 14px;
+    }
+    /*Solution Mobile*/
+    .solution-img img{
+        width: 150px;
+    }
+    /*Services Mobile*/
+    .services-mob .services-left a.active{
+        width: 130px;
+    }
+    .services-mob .services-left  a{
+        width: 120px;
+        font-size: 10px;
+    }
+    .services-mob .services-text span:first-child{
+        font-size: 16px;
+    }
+    .services-mob .services-list {
+        padding: 30px 0;
+    }
+    .services-mob{
+        padding: 20px 0;
+    }
+    /*Description Mobile*/
+    .description-mob .desc-car__text span:first-child{
+        font-size: 14px;
+    }
+    /*Clients Mobile*/
+    .clients-block-img img{
+        max-width: 140px;
+    }
+    .contacts-logo img{
+        max-width: 150px;
+    }
+    /*Contacts Mobile*/
+    .contacts-title{
+        font-size: 16px;
+    }
+    .contacts-messagers-phone span{
+        font-size: 16px;
+    }
+    .contacts-messagers-mail span{
+        font-size: 16px;
+    }
+    .contacts-messagers-icon img{
+        width: 40px;
+    }
+    .contacts-btn{
+        padding: 7px 78px;
+    }
+    /*OTHER PAGES*/
+    /*CONTACTS*/
+    .connection-message{
+        width: 300px;
+    }
+    .connection-message-str input{
+        width: 100px;
+    }
+    .connection-message textarea{
+        width: 230px;
+    }
+    /*Card*/
+    .card{
+        padding: 130px 0;
+    }
+    .card-text{
+        width: 86%;
+    }
+    .zabr-container{
+        padding: 0 20px;
+    }
+}
+/*Fonts*/
+@font-face {
+font-family: "Century Gothic";
+// адрес шрифта и тип
+src: url("../fonts/GOTHIC.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
